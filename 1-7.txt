@@ -1,0 +1,10 @@
+1-7
+
+The good-enough? test fails for large and small inputs.
+Small: (sqrt .0001) isn't accurate.
+Big: (sqrt 1e46) does not return.  Presumably floating-point arithmetic means that there is not enough precision in calculating guess and the square of guess to be within the desired tolerance of 1e46.
+
+(define (good-enough2? guess x)
+	(< (abs (/ (- (square guess) x) x)) 0.001))
+
+Yup, it's better now.

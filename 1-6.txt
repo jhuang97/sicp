@@ -1,0 +1,5 @@
+1-6
+
+It works - it works just like the version with if.
+
+I guess the if special form is just syntactic sugar or something.

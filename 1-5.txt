@@ -12,7 +12,7 @@ applicative-order evaluation gives
 (test 0 (p))
 (test 0 (p))
 ...
-We'll be stuck evaluating (p) forever.  I tried doing this in Scheme and this line indeed never finished evaluating.
+We'll be stuck evaluating (p) forever? I tried doing this in Scheme and this line indeed never finished evaluating.
 
 normal-order evaluation
 (test 0 (p))
